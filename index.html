@@ -368,6 +368,256 @@
                 page-break-after: always;
             }
         }
+        
+        /* RESPONSIVIDADE PARA MOBILE */
+        @media screen and (max-width: 768px) {
+            body {
+                background: white;
+            }
+            
+            .container {
+                background: white;
+            }
+            
+            .cover {
+                padding: 60px 20px;
+            }
+            
+            .cover h1 {
+                font-size: 2.5em;
+            }
+            
+            .cover .destination {
+                font-size: 1.5em;
+            }
+            
+            .cover .info-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin: 30px auto;
+            }
+            
+            .cover .info-box {
+                padding: 20px;
+            }
+            
+            .cover .info-box strong {
+                font-size: 1.1em;
+            }
+            
+            .cover .info-box span {
+                font-size: 1.3em;
+            }
+            
+            .day-section {
+                padding: 30px 20px;
+            }
+            
+            .day-header {
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .day-number {
+                font-size: 2.5em;
+                margin-bottom: 15px;
+            }
+            
+            .day-title {
+                margin-left: 0;
+            }
+            
+            .day-title h2 {
+                font-size: 1.8em;
+            }
+            
+            .day-title p {
+                font-size: 1.1em;
+            }
+            
+            .period-title {
+                font-size: 1.2em;
+                padding: 12px 20px;
+            }
+            
+            .activity {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .activity-time {
+                margin-right: 0;
+                margin-bottom: 15px;
+                font-size: 1em;
+                min-width: auto;
+                width: 100%;
+            }
+            
+            .activity-content h4 {
+                font-size: 1.2em;
+            }
+            
+            .activity-content p {
+                font-size: 0.95em;
+            }
+            
+            .highlight-box {
+                padding: 20px;
+            }
+            
+            .highlight-box strong {
+                font-size: 1.1em;
+            }
+            
+            .cost-section {
+                padding: 30px 20px;
+            }
+            
+            .cost-title {
+                font-size: 2em;
+            }
+            
+            .cost-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .cost-card {
+                padding: 20px;
+            }
+            
+            .cost-card h3 {
+                font-size: 1.5em;
+            }
+            
+            .cost-item {
+                font-size: 1em;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .cost-total .amount {
+                font-size: 2.5em;
+            }
+            
+            .cost-total .per-person {
+                font-size: 1.1em;
+            }
+            
+            /* Locais Visitados Mobile */
+            .day-section > div[style*="text-align: center"] h2 {
+                font-size: 2em !important;
+            }
+            
+            .day-section > div[style*="text-align: center"] p {
+                font-size: 1em !important;
+            }
+            
+            .day-section > div[style*="background: linear-gradient(135deg, #e8f5e9"] {
+                padding: 20px !important;
+            }
+            
+            .day-section > div[style*="background: linear-gradient(135deg, #e8f5e9"] > div[style*="display: grid"] {
+                grid-template-columns: 1fr !important;
+                gap: 10px !important;
+            }
+            
+            .day-section > div[style*="background: linear-gradient(135deg, #e8f5e9"] > div > div {
+                padding: 10px 15px !important;
+                font-size: 0.95em !important;
+            }
+            
+            /* Resumo Total Mobile */
+            .day-section > div[style*="background: linear-gradient(135deg, #0f6b3e"] {
+                padding: 20px !important;
+            }
+            
+            .day-section > div[style*="background: linear-gradient(135deg, #0f6b3e"] h3 {
+                font-size: 1.5em !important;
+            }
+            
+            .day-section > div[style*="background: linear-gradient(135deg, #0f6b3e"] > div[style*="display: flex"] {
+                flex-direction: column !important;
+            }
+            
+            .day-section > div[style*="background: linear-gradient(135deg, #0f6b3e"] > div > div {
+                min-width: auto !important;
+                width: 100% !important;
+            }
+            
+            .day-section > div[style*="background: linear-gradient(135deg, #0f6b3e"] > div > div > div:first-child {
+                font-size: 2.5em !important;
+            }
+            
+            .day-section > div[style*="background: linear-gradient(135deg, #0f6b3e"] > div > div > div:last-child {
+                font-size: 1em !important;
+            }
+            
+            .checklist {
+                padding: 20px;
+            }
+            
+            .checklist h3 {
+                font-size: 1.5em;
+            }
+            
+            .checklist-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .checklist-item {
+                font-size: 0.95em;
+            }
+            
+            .info-box-content {
+                padding: 15px;
+            }
+            
+            .info-box-content ul {
+                font-size: 0.95em;
+            }
+            
+            .footer-doc {
+                padding: 30px 20px;
+            }
+            
+            .footer-doc h2 {
+                font-size: 1.8em;
+            }
+            
+            .footer-doc p {
+                font-size: 1em !important;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .cover h1 {
+                font-size: 2em;
+            }
+            
+            .cover .destination {
+                font-size: 1.2em;
+            }
+            
+            .day-title h2 {
+                font-size: 1.5em;
+            }
+            
+            .activity-content h4 {
+                font-size: 1.1em;
+            }
+            
+            .cost-title {
+                font-size: 1.6em;
+            }
+            
+            .cost-total .amount {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
